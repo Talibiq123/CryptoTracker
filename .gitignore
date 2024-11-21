@@ -22,7 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.env
 
 
-# Coin Gecko API Key - CG-Y3ud9hsBLTwTwe7DDAapjJkB
+
 
