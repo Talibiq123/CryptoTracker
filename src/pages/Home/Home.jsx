@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './home.css'
+import { CoinContext } from '../../context/CoinContext'
 
 const Home = () => {
+
+  const { allCoin } = useContext(CoinContext);
+
   return (
     <div className='home'>
       <div className='hero'>
