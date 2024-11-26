@@ -20,15 +20,17 @@ const CoinContextProvider = (props) => {
       },
     };
 
-    useEffect(() => {
-        fetchAllCoin();
-    }, [currency])
+    
 
     fetch(url, options)
       .then((res) => res.json())
       .then((json) => setAllCoin(json))
       .catch((err) => console.error(err));
   };
+ 
+  useEffect(() => {
+    fetchAllCoin();
+}, [currency])
 
   const contextValue = {
     allCoin, currency,
